@@ -1,2 +1,5 @@
 -- LIST ALL DATABASE TABLES
-hbtn_0c_0 -u user -p -e "SHOW TABLES;"
+
+USE your_database_name;
+
+SHOW TABLES;
