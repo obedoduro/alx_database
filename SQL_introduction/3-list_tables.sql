@@ -1,3 +1,2 @@
 -- LIST ALL DATABASE TABLES
-SELECT DATABASE mysql;
-SHOW TABLES;
+mysql -u user -p -e "SHOW TABLES;"
