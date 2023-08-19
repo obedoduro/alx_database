@@ -1,5 +1,5 @@
 -- LIST ALL DATABASE TABLES
 
-USE your_database_name;
+USE sql;
 
 SHOW TABLES;
