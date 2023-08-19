@@ -1,2 +1,2 @@
 -- LIST ALL DATABASE TABLES
-mysql -u user -p -e "SHOW TABLES;"
+hbtn_0c_0 -u user -p -e "SHOW TABLES;"
