@@ -1,5 +1,4 @@
 --create TABLE IN A CURRENT DATABASE
-
 USE mysql
 
 --create tables
