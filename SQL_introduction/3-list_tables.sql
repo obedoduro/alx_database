@@ -1,5 +1,5 @@
 -- LIST ALL DATABASE TABLES
 
-USE mysql;
+USE hbtn_0c_0;
 
 SHOW TABLES;
