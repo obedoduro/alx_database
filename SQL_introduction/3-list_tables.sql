@@ -1,5 +1,5 @@
 -- LIST ALL DATABASE TABLES
 
-USE hbtn_0c_0;
+USE holbteron_0;
 
 SHOW TABLES;
