@@ -1,5 +1,5 @@
 -- LIST ALL DATABASE TABLES
 
-USE sql;
+USE mysql;
 
 SHOW TABLES;
