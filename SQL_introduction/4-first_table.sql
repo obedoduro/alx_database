@@ -1,8 +1,10 @@
 --create TABLE IN A CURRENT DATABASE
-USE mysql;
+
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
+
 
 --create tables
-CREATE TABLE IF NOT EXISTS mysql(
+CREAirst_table(
     id INT,
     name VARCHAR(256)
 );
