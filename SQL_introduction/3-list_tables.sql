@@ -5,6 +5,6 @@ CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
 USE hbtn_0c_0;
 
 -- LIST TABLES
-show tables;
 
+SHOW tables;
 -- Replace with the actual database name
