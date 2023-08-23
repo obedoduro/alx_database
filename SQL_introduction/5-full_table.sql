@@ -9,7 +9,7 @@ USE hbtn_0c_0;
 
 -- Create the table if it doesn't exist
 CREATE TABLE
-IF NOT EXISTS first_table
+IF NOT EXISTS first_tablemL
 (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar
@@ -21,4 +21,4 @@ IF NOT EXISTS first_table
 (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
- DESC first_table;
+DESC first_tablemL;
