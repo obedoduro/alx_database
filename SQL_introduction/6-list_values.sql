@@ -15,8 +15,8 @@ IF NOT EXISTS first_table
   id int ,
   name varchar
 (128) 
- )
+ );
 
 -- fetch the row of the table
-SELECT id
+SELECT *
 FROM first_table;
