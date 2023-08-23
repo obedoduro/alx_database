@@ -1,8 +1,20 @@
--- Create the database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS hbtn_test_db_4;
+CREATE DATABASE
+IF NOT EXISTS hbtn_0c_0;
 
--- Use the database
-USE hbtn_test_db_4;
 
--- Create the table if it doesn't exist
-CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256));
+-- Save this script as 5-full_table.sql
+
+USE hbtn_0c_0;
+
+-- Create a temporary table to capture the table structure
+CREATE TABLE
+IF NOT EXISTS first_table
+(
+ 
+id int ,
+name varchar
+(128),
+c char
+(1)
+
+    );

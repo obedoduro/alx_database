@@ -9,6 +9,7 @@ USE hbtn_0c_0;
 
 -- Create a temporary table to capture the table structure
 CREATE TABLE
-IF NOT EXISTS first_table
-(id INT, name VARCHAR
-(256));
+IF NOT EXISTS first_table (
+    id INT,
+    name VARCHAR(256)
+    );
