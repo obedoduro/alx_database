@@ -8,6 +8,15 @@ IF NOT EXISTS hbtn_0c_0;
 USE hbtn_0c_0;
 
 
+-- Create the table if it doesn't exist
+CREATE TABLE
+IF NOT EXISTS first_table
+(
+  id int ,
+  name varchar
+(128) 
+ )
+
 -- fecth the row of the table
 SELECT *
 FROM first_table;
