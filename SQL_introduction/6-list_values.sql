@@ -18,5 +18,5 @@ IF NOT EXISTS first_table
  )
 
 -- fecth the row of the table
-SELECT *
+SELECT id
 FROM first_table;
