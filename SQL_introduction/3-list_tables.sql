@@ -30,5 +30,5 @@ CREATE TABLE Tables_in_hbtn_test_db_0
 );
 -- LIST TABLES
 
-SHOW tables;
+-- SHOW tables;
 -- Replace with the actual database name
