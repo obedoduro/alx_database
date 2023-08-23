@@ -14,4 +14,4 @@ IF NOT EXISTS first_table
 (256));
 
 -- Create the database if it doesn't exist
-DESCRIBE first_table;
+DESC first_table;
