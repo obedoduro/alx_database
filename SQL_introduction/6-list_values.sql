@@ -20,3 +20,5 @@ IF NOT EXISTS first_table
 -- fetch the row of the table
 SELECT *
 FROM first_table;
+
+SHOW tables;
