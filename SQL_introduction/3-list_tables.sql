@@ -22,12 +22,7 @@ CREATE TABLE IF NOT EXISTS holbteron_2
     -- holbteron_2 varchar(255)
     Tables_in_hbtn_test_db_0 varchar(255)
 );
-CREATE TABLE IF NOT EXISTS Tables_in_hbtn_test_db_0
-(
 
-    -- holbteron_2 varchar(255)
-    Tables_in_hbtn_test_db_0 varchar(255)
-);
 -- LIST TABLES
 
  SHOW tables;
