@@ -17,6 +17,6 @@ IF NOT EXISTS first_table
 (128) 
  )
 
--- fecth the row of the table
+-- fetch the row of the table
 SELECT id
 FROM first_table;
