@@ -21,4 +21,3 @@ IF NOT EXISTS first_table
 SELECT *
 FROM first_table;
 
-SHOW tables;
