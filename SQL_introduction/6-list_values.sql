@@ -8,6 +8,6 @@ IF NOT EXISTS hbtn_0c_0;
 USE hbtn_0c_0;
 
 
---fecth the row of the table
+-- fecth the row of the table
 SELECT *
 FROM first_table;
