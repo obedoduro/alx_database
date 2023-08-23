@@ -23,4 +23,4 @@ CREATE TABLE first_table(
 )'
 )
 DESC first_table
-show first_table
+SHOW first_table
