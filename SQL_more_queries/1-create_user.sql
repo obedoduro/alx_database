@@ -13,8 +13,8 @@ GRANT OPTION;
 FLUSH PRIVILEGES;
 
 
-SELECT user
-FROM mysql.user
-WHERE user = 'user_0d_1' AND host = 'localhost';
+-- SELECT user
+-- FROM mysql.user
+-- WHERE user = 'user_0d_1' AND host = 'localhost';
 
 
