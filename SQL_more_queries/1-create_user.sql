@@ -1,8 +1,6 @@
 -- Set the password for 'user_0d_1'
 SET PASSWORD
-FOR 'user_0d_1'@'localhost' = PASSWORD
-('YES');
-
+= 'YES';
 -- Check if the user 'user_0d_1' exists
 SELECT user
 FROM mysql.user
@@ -22,7 +20,7 @@ WHERE user = 'user_0d_1'
 LIMIT 1;
 
 IF userCount = 0 THEN
-CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'YES';
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost'
 WITH
 GRANT OPTION;
