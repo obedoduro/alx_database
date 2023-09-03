@@ -1,36 +1,20 @@
--- Set the password for 'user_0d_1'
+-- Reset the password for 'user_0d_1' (assuming you have root privileges)
 SET PASSWORD
-= 'YES';
--- Check if the user 'user_0d_1' exists
-SELECT user
-FROM mysql.user
-WHERE user = 'user_0d_1'
-LIMIT 1;
+= 'user_0d_1_pwd';
 
--- If the user does not exist, create it with all privileges
-DELIMITER //
-CREATE PROCEDURE CreateUserIfNotExists()
-BEGIN
-    DECLARE userCount INT;
+CREATE USER
+IF NOT EXISTS  'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd' ;
 
-SELECT COUNT(*)
-INTO userCount
-FROM mysql.user
-WHERE user = 'user_0d_1'
-LIMIT 1;
 
-IF userCount = 0 THEN
-CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'YES';
+-- Grant all privileges to 'user_0d_1' (if not already granted)
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost'
 WITH
 GRANT OPTION;
-        FLUSH PRIVILEGES;
-END
-IF;
-END;
-//
-DELIMITER ;
+FLUSH PRIVILEGES;
 
--- Call the procedure to create the user if not exists
-CALL CreateUserIfNotExists
-();
+
+SELECT user
+FROM mysql.user
+WHERE user = 'user_0d_1' AND host = 'localhost';
+
+
