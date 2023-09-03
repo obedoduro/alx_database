@@ -1,3 +1,8 @@
+-- Set the password for 'user_0d_1'
+SET PASSWORD
+FOR 'user_0d_1'@'localhost' = PASSWORD
+('user_0d_1_pwd');
+
 -- Check if the user 'user_0d_1' exists
 SELECT user
 FROM mysql.user
