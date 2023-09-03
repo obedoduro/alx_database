@@ -19,9 +19,9 @@
 
 
 -- Verify if the user 'user_0d_1' exists
-SELECT user
-FROM mysql.user
-WHERE user = 'user_0d_1' AND host = 'localhost';
+-- SELECT user
+-- FROM mysql.user
+-- WHERE user = 'user_0d_1' AND host = 'localhost';
 
 -- If the user does not exist, create it with all privileges
 CREATE USER
