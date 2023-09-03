@@ -1,6 +1,6 @@
 -- Create a stored procedure to list privileges for a user
 DELIMITER
-//
+
 
 CREATE PROCEDURE ListUserPrivileges(IN username VARCHAR
 (50))
@@ -9,7 +9,7 @@ BEGIN
     PREPARE stmt FROM @sql;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
-END//
+END
 
 DELIMITER ;
 
