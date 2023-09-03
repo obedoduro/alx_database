@@ -23,6 +23,10 @@
 -- FROM mysql.user
 -- WHERE user = 'user_0d_1' AND host = 'localhost';
 
+mysql
+-u user_0d_1 -p
+
+
 -- Grant all privileges to 'user_0d_1' on all databases
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost'
 WITH
