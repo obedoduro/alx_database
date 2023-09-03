@@ -1,9 +1,4 @@
--- Create the database if it doesn't exist
-CREATE DATABASE
-IF NOT EXISTS hbtn_0c_0;
 
--- Use the database
-USE hbtn_0c_0;
 
 -- Create the stored procedure to list privileges for a user
 
@@ -31,4 +26,5 @@ USE hbtn_0c_0;
 -- -- Call the stored procedure for user_0d_2
 -- CALL ShowGrantsForUser
 -- ('user_0d_2');
-SHOW PRIVILEGES;
+SHOW GRANTS
+FOR '<hbtn-0_0>'@'<localhost>';
