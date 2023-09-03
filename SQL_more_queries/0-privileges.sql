@@ -1,30 +1,6 @@
 
 
--- Create the stored procedure to list privileges for a user
+-- show grant for user user_0d_1
 
--- CREATE PROCEDURE ShowGrantsForUser(IN username VARCHAR
--- (50))
--- BEGIN
---     DECLARE done INT DEFAULT FALSE;
---     DECLARE grant_stmt VARCHAR
---     (255);
--- DECLARE cur CURSOR FOR
---         SELECT DISTINCT
---     CONCAT('SHOW GRANTS FOR ''', user, '''@''', host, ''';')
--- FROM
---     mysql.user
--- WHERE
---             user = username;
-
--- END
-
-
--- -- Call the stored procedure for user_0d_1
--- CALL ShowGrantsForUser
--- ('user_0d_1');
-
--- -- Call the stored procedure for user_0d_2
--- CALL ShowGrantsForUser
--- ('user_0d_2');
 SHOW GRANTS
-FOR '<hbtn-0_0>'@'<localhost>';
+FOR '<user_0d_1>'@'<localhost>';
