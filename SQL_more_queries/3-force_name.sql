@@ -1,9 +1,9 @@
 -- Create the database if it doesn't exist
 CREATE DATABASE
-IF NOT EXISTS hbtn_test_db_3;
+IF NOT EXISTS hbtn_0d_2;
 
 -- Switch to the database
-USE hbtn_test_db_3;
+USE hbtn_0d_2;
 
 -- Create the table if it doesn't exist
 CREATE TABLE
