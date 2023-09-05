@@ -6,7 +6,7 @@ USE hbtn_0d_usa;
 
 -- Create table
 CREATE TABLE
-IF NOT EXISTS cities
+IF NOT EXISTS states
 (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     state_id INT NOT NULL,
@@ -18,9 +18,9 @@ IF NOT EXISTS cities
   
 );
 
-SELECT cities.id, cities.name
-FROM cities
-WHERE cities.state_id = (SELECT id
+SELECT states.id, states.name
+FROM states
+WHERE states.state_id = (SELECT id
 FROM states
 WHERE name = 'California')
-ORDER BY cities.id ASC;
+ORDER BY states.id ASC;
