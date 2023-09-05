@@ -1,10 +1,10 @@
 -- Check if the table exists (always a name)
 
 -- Create the database if it doesn't exist
--- CREATE DATABASE
--- IF NOT EXISTS hbtn_test_db_3;
+CREATE DATABASE
+IF NOT EXISTS hbtn_0d_2;
 
-USE hbtn_test_db_3;
+USE hbtn_0d_2;
 -- Replace 'your_database_name' with the actual database name
 
 -- Create the table if it doesn't exist
