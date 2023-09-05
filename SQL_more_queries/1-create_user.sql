@@ -23,9 +23,6 @@
 -- FROM mysql.user
 -- WHERE user = 'user_0d_1' AND host = 'localhost';
 
-mysql
--u user_0d_1 -p
-
 
 -- Grant all privileges to 'user_0d_1' on all databases
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost'
@@ -35,6 +32,7 @@ GRANT OPTION;
 -- If the user does not exist, create it with all privileges
 CREATE USER
 IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+
 
 -- Set the password for 'user_0d_1' (ensure it matches the one provided)
 SET PASSWORD
