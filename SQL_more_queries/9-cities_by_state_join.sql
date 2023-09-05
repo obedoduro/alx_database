@@ -28,6 +28,26 @@ IF NOT EXISTS cities
 (id)
 );
 
+-- Inserting new content
+
+-- Insert data into the 'states' table
+INSERT INTO states
+    (name)
+VALUES
+    ('California');
+
+-- Insert data into the 'cities' table (example data)
+INSERT INTO cities
+    (state_id, name)
+VALUES
+    (1, 'San Francisco'),
+    (2, 'San Diego'),
+    (3, 'San Jose'),
+    (10, 'Page Arizona'),
+    (11, 'Phonix Arizona'),
+    (12, 'Las Vegas Jose');
+
+
 -- fetch from database
 SELECT cities.id, cities.name, states.name AS state_name
 FROM cities
