@@ -9,12 +9,9 @@ USE hbtn_test_db_3;
 CREATE TABLE
 IF NOT EXISTS force_name
 (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR
-(256) NOT NULL,
-
-PRIMARY KEY
-(id),
+(256) NOT NULL
 );
 
 -- Insert sample data into the table
