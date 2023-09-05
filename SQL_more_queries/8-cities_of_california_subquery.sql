@@ -6,17 +6,17 @@ IF NOT EXISTS hbtn_0d_usa;
 USE hbtn_0d_usa;
 
 -- Create the 'states' table
-CREATE TABLE
-IF NOT EXISTS states
-(
-    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    name VARCHAR
-(256) NOT NULL
-);
+-- CREATE TABLE
+-- IF NOT EXISTS states
+-- (
+--     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+--     name VARCHAR
+-- (256) NOT NULL
+-- );
 
 -- Create the 'cities' table with a foreign key reference to 'states'
 CREATE TABLE
-IF NOT EXISTS cities
+IF NOT EXISTS states
 (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     state_id INT NOT NULL,
@@ -50,4 +50,4 @@ IF NOT EXISTS cities
 -- ORDER BY cities.id ASC;
 SELECT *
 FROM states
-ORDER BY cities.id ASC;
+ORDER BY states.id ASC;
