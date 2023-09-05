@@ -96,7 +96,10 @@ INSERT INTO cities
 VALUES
     (1, 'Los Francisco'),
     (1, 'San Diego'),
-    (1, 'San Jose');
+    (1, 'San Jose'),
+    (1,  'Page	Arizona'),
+    (1,	'Phoenix	Arizona'),
+    (1, 'Las Vegas	Nevada');
 
 -- List all the cities of California
 
