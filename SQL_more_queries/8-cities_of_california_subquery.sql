@@ -20,7 +20,3 @@ IF NOT EXISTS states
 
 SELECT states.id, states.name
 FROM states
-WHERE states.state_id = (SELECT id
-FROM states
-WHERE name = 'California')
-ORDER BY states.id ASC;
