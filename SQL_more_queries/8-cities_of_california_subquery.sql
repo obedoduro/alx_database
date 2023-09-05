@@ -49,4 +49,5 @@ IF NOT EXISTS cities
 -- -- WHERE name = 'California')
 -- ORDER BY cities.id ASC;
 SELECT *
-FROM states;
+FROM states
+ORDER BY cities.id ASC;
