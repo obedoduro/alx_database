@@ -37,8 +37,8 @@ VALUES
 INSERT INTO cities
     (state_id, name)
 VALUES
-    (1, 'Los Angeles'),
-    (1, 'San Francisco'),
+    (1, 'Los Francisco'),
+    (1, 'San Diego'),
     (1, 'San Jose');
 
 -- List all the cities of California
