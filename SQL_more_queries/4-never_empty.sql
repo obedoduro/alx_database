@@ -2,10 +2,10 @@
 
 -- Create the database if it doesn't exist
 CREATE DATABASE
-IF NOT EXISTS your_database_name;
+IF NOT EXISTS hbtn_test_db_4;
 
 -- Switch to the database
-USE your_database_name;
+USE hbtn_test_db_4;
 
 -- Create the table if it doesn't exist
 CREATE TABLE
