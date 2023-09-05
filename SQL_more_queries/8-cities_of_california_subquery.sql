@@ -1,22 +1,50 @@
--- Creating database  hbtn_0d_usa
-CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+-- Create the database if it doesn't exist
+CREATE DATABASE
+IF NOT EXISTS hbtn_0d_usa;
 
--- USE database
+-- Switch to the database
 USE hbtn_0d_usa;
 
--- Create table
+-- Create the 'states' table
 CREATE TABLE
 IF NOT EXISTS states
 (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    state_id INT NOT NULL,
-    FOREIGN KEY
-(state_id) REFERENCES states
-(id),
     name VARCHAR
 (256) NOT NULL
-  
 );
 
-SELECT states.id, states.name
+-- Create the 'cities' table with a foreign key reference to 'states'
+CREATE TABLE
+IF NOT EXISTS cities
+(
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    state_id INT NOT NULL,
+    name VARCHAR
+(256) NOT NULL,
+    FOREIGN KEY
+(state_id) REFERENCES states
+(id)
+);
+
+-- Insert data into the 'states' table
+INSERT INTO states
+    (name)
+VALUES
+    ('California');
+
+-- Insert data into the 'cities' table (example data)
+INSERT INTO cities
+    (state_id, name)
+VALUES
+    (1, 'Los Angeles'),
+    (1, 'San Francisco'),
+    (1, 'San Diego');
+
+-- List all the cities of California
+SELECT cities.id, cities.name
+FROM cities
+WHERE cities.state_id = (SELECT id
 FROM states
+WHERE name = 'California')
+ORDER BY cities.id ASC;
