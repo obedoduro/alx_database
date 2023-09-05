@@ -2,8 +2,8 @@
 -- CREATE DATABASE
 -- IF NOT EXISTS hbtn_test_db_3;
 
--- -- Switch to the database
--- USE hbtn_test_db_3;
+-- Switch to the database
+USE hbtn_test_db_3;
 
 -- Create the table if it doesn't exist
 CREATE TABLE
