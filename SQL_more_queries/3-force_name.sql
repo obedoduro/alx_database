@@ -11,7 +11,7 @@ USE hbtn_test_db_3;
 CREATE TABLE
 IF NOT EXISTS force_name
 (
-    id INT NOT NULL DEFAULT 1,
+    id INT ,
     name VARCHAR
 (256)
 );
