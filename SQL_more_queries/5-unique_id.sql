@@ -6,7 +6,7 @@ USE hbtn_test_db_5;
 
 CREATE TABLE
 IF NOT EXISTS unique_id (
-   id INT NOT NULL DEFAULT 1,
-    name VARCHAR(256)
+    id INT NOT NULL DEFAULT 1,
+    name VARCHAR(256),
+    UNIQUE KEY id_unique (id)
 );
-
