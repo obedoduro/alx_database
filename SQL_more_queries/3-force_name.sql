@@ -1,5 +1,5 @@
 -- Check if the table exists (always a name)
-USE your_database_name;
+USE hbtn_0d_2;
 -- Replace 'your_database_name' with the actual database name
 
 -- Create the table if it doesn't exist
