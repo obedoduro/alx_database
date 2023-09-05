@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS cities(
     state_id INT NOT NULL,
 
 
-    FOREIGN KEY foreign_id (state_id) 
+    FOREIGN KEY foreign_id (state_id), 
     UNIQUE KEY unique_id (id)
 );
 
