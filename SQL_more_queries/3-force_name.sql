@@ -18,11 +18,11 @@ PRIMARY KEY
 );
 
 -- Insert sample data into the table
-INSERT INTO force_name
-    (name)
-VALUES
-    ('Holberton School'),
-    ('Python is cool'),
-    ('Holberton'),
-    ('School'),
-    ('C is fun');
+-- INSERT INTO force_name
+--     (name)
+-- VALUES
+--     ('Holberton School'),
+--     ('Python is cool'),
+--     ('Holberton'),
+--     ('School'),
+--     ('C is fun');
