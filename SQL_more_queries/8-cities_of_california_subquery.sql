@@ -39,7 +39,7 @@ INSERT INTO cities
 VALUES
     (1, 'Los Angeles'),
     (1, 'San Francisco'),
-    (1, 'San Diego');
+    (1, 'San Jose');
 
 -- List all the cities of California
 SELECT cities.id, cities.name
