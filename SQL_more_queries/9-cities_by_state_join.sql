@@ -99,9 +99,12 @@ VALUES
     (1, 'San Jose');
 
 -- List all the cities of California
-SELECT cities.id, cities.name
+
+
+SELECT
+    cities.id,
+    cities.name,
+    states.name AS state_name
 FROM cities
-WHERE cities.state_id = (SELECT id
-FROM states
-WHERE name = 'California')
+    JOIN states ON cities.state_id = states.id
 ORDER BY cities.id ASC;
