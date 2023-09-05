@@ -27,19 +27,19 @@ IF NOT EXISTS cities
 (id)
 );
 
--- Insert data into the 'states' table
-INSERT INTO states
-    (name)
-VALUES
-    ('California');
+-- -- Insert data into the 'states' table
+-- INSERT INTO states
+--     (name)
+-- VALUES
+--     ('California');
 
--- Insert data into the 'cities' table (example data)
-INSERT INTO cities
-    (state_id, name)
-VALUES
-    (1, 'Los Francisco'),
-    (1, 'San Diego'),
-    (1, 'San Jose');
+-- -- Insert data into the 'cities' table (example data)
+-- INSERT INTO cities
+--     (state_id, name)
+-- VALUES
+--     (1, 'Los Francisco'),
+--     (1, 'San Diego'),
+--     (1, 'San Jose');
 
 -- List all the cities of California
 SELECT cities.id, cities.name
