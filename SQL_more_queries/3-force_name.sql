@@ -1,16 +1,25 @@
--- Check if the table exists (always a name)
-
 -- Create the database if it doesn't exist
 CREATE DATABASE
-IF NOT EXISTS hbtn_0d_2;
+IF NOT EXISTS hbtn_test_db_3;
 
-USE hbtn_0d_2;
--- Replace 'your_database_name' with the actual database name
+-- Switch to the database
+USE hbtn_test_db_3;
 
 -- Create the table if it doesn't exist
 CREATE TABLE
 IF NOT EXISTS force_name
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(256) NOT NULL
+    name VARCHAR
+(256) NOT NULL
 );
+
+-- Insert sample data into the table
+INSERT INTO force_name
+    (name)
+VALUES
+    ('Holberton School'),
+    ('Python is cool'),
+    ('Holberton'),
+    ('School'),
+    ('C is fun');
