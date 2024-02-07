@@ -1,16 +1,2 @@
--- Create the database if it doesn't exist
-CREATE DATABASE
-IF NOT EXISTS hbtn_0c_0;
-
-
-
--- Use thedatabase
-USE hbtn_0c_0;
-
--- Create the table if it doesn't exist
-CREATE TABLE
-IF NOT EXISTS first_table
-(id INT);
-
--- SHOW tables;
-DESC first_table
+-- Prints the full description of the table first_table in  MySQL server.
+SHOW CREATE TABLE 'first_table';
